@@ -1,0 +1,30 @@
+body {
+	padding: 0; margin: 0;
+}
+#nav li {
+	display: inline;
+	list-style: none;
+}
+#nav {
+	padding: 0; margin: 0;
+	text-align: center; /* centrer le texte */
+}
+#nav a {
+	display:inline-block;
+	margin: 0 30px;
+}
+ul li a{
+    ...
+    position: relative;
+}
+ul li a::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 9px;
+    margin-left: -2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .5);
+}
